@@ -17,5 +17,5 @@ jobs:
       - name: "Login"
         run: docker login --username ${{secrets.TokenUsername}} --password ${{secrets.TokenPassword}}
               
-      - name: ""
-        run: 
+      - name: "push"
+        run: docker push 20486903/image
