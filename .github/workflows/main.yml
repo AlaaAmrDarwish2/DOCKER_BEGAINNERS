@@ -1,13 +1,13 @@
-on :
-  push :
-    branches :
+on:
+  push:
+    branches:
       - master
       
 
-jobs :
-  build :
-    runs-on : Ubuntu-latest
+jobs:
+  build:
+    runs-on: Ubuntu-latest
     
-    steps :
-      - name : "echo"
-        run : echo "HelloWorld"
+    steps:
+      - name: "echo"
+        run: echo "HelloWorld"
