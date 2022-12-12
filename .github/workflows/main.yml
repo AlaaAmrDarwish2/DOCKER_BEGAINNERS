@@ -9,5 +9,13 @@ jobs:
     runs-on: Ubuntu-latest
     
     steps:
-      - name: "echo"
-        run: echo "Hello World"
+      - uses: actions/checkout@v3
+      
+      - name: "Building image"
+        run: docker build -t 20486903/image .
+        
+      - name: "Login"
+        run: docker login --username ${{secrets.TokenUsername}} --password ${{secrets.TokenPassword}}
+              
+      - name: ""
+        run: 
